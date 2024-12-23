@@ -40,7 +40,8 @@ const ClientSidePage = () => {
   return (
     <div>
       {loading ? (
-        <div className='h-screen flex justify-center items-center'> 
+        
+        <div className='mt-20 flex justify-center items-center'> 
           <h1 className='text-3xl font-bold'>Loading....</h1>
            </div>
       ) : (
@@ -48,7 +49,7 @@ const ClientSidePage = () => {
         <h1 className="text-2xl mb-10 font-semibold text-center underline">
         Client Side Data Fetching
       </h1>
-    <div className="grid px-10 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <div className="grid px-4 lg:px-10 sm:grid-cols-2 lg:grid-cols-3 gap-8">
       {data.map((products, index) => (
         <div key={index} className='shadow-lg rounded cursor-pointer '>
           <div className='flex justify-center h-[180px]'>
